@@ -1,0 +1,16 @@
+<%-include("./../_partials/header")%>
+
+<h2 class="text-center">Enter a new beer!</h2>
+    <form action="/beers" method="post">
+        <br/>
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <br/>
+        <label>Style:
+            <input type="text" name="style">
+        </label>
+        <br/>
+        <button class="btn-success" type="submit">Add Beer!</button>
+    </form>
+<%-include("./../_partials/footer")%>

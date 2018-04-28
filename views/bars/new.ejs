@@ -1,0 +1,16 @@
+<%- include("./../_partials/header")%>
+
+<h2 class="text-center">Enter a new bar!</h2>
+    <form action="/bars" method="post">
+        <br/>
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <br/>
+        <label>Location:
+            <input type="text" name"location">    
+        </label>
+        <br/>
+        <button class="btn-success" type="submit">Add Bar</button>
+    </form>
+<%- include("./../_partials/footer")%>

@@ -1,0 +1,24 @@
+<%- include("./../_partials/header")%>
+
+<a href=/beers/new>Add New Beer</a>
+
+<h2 class="text-center">All Beers</h2>
+<hr>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Style</th>
+        <th>Served at These Bars:</th>
+        <th>Comments</th>
+    </tr>
+    <hr>
+    <% beers.forEach(function(beer) { %>
+        <tr>
+            <td> <%= beer.name %> </td>
+            <td> <% beer.style %></td>
+            <!-- <td> <% beer.bars %></td>
+            <td> <% beer.comments %></td> -->
+        </tr>
+        <% }); %>
+</table>
+<%- include("./../_partials/footer")%>
